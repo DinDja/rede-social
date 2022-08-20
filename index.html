@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--Css bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Social</title>
+</head>
+
+<body>
+    <!--navbar inicio-->
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2 class="logo" style="cursor: pointer;">
+                Example<span style="color:hsl(252, 75%, 60%);">Social</span>
+            </h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Procure pelo BrunoWorld!">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="/assets/profile-1.jpg" style="cursor: pointer;" alt="profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar fim-->
+
+    <!--Main-->
+    <main>
+        <div class="container">
+            <!--=========ESPAÇO A ESQUERDA=======-->
+            <section class="left">
+                <a class="d-flex align-items-center profile">
+                    <div class="profile-photo">
+                        <img src="/assets/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Lorem ipsum</h4>
+                        <p class="text-muted">@Lorem</p>
+                    </div>
+                </a>
+                <!---SIDEBAR-->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house-chimney"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i></span>
+                        <h3>Explorar</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notificações</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-comments"><small class="notification-count">6</small></i></span>
+                        <h3>Mensagens</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i></span>
+                        <h3>Salvos</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-brands fa-themeisle"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-gears"></i></span>
+                        <h3>Configurações</h3>
+                    </a>
+
+                </div>
+                <!--=======Fim sidebar========-->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </section>
+            <!--=========ESPAÇO Ao CENTRO=======-->
+            <div class="midler">
+                <!--======Stories======-->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/assets/profile-8.jpg">
+                        </div>
+                        <p class="name">Seu Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/assets/profile-7.jpg">
+                        </div>
+                        <p class="name">Lorem ipsum</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/assets/profile-10.jpg">
+                        </div>
+                        <p class="name">Lorem ipsum</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/assets/profile-12.jpg">
+                        </div>
+                        <p class="name">Lorem ipsum</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/assets/profile-20.jpg">
+                        </div>
+                        <p class="name">Lorem ipsum</p>
+                    </div>
+                </div>
+                <!--=========== FIm dos stories===========-->
+                <form class="d-flex align-items-center justify-content-between create-post">
+                    <div class="profile-photo">
+                        <img src="/assets/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="O que você está pensando?">
+                    <input type="subimit" value="post" class="btn btn-primary">
+                </form>
+
+                <!--================FEED============-->
+                <!--========FEED 1=========-->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="d-flex justify-content-between head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/assets/profile-20.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lorem ipsum</h3>
+                                    <small>Salvador, 15min atrás.</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="/assets/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-book-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/assets/profile-10.jpg"></span>
+                            <span><img src="/assets/profile-4.jpg"></span>
+                            <span><img src="/assets/profile-8.jpg"></span>
+                            <p>Curtido por <b>Lorem ipsum</b> e <b>232 outros</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lorem ipsum</b> Lorem ipsum dolor sit
+                                <span class="harsh-tag">#Lorem ipsum</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            Ver todos os 277 comentários
+                        </div>
+                    </div>
+                    <!--========FEED 2========-->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/assets/profile-18.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lorem ipsum</h3>
+                                    <small>Salvador, 15min atrás.</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="/assets/feed-2.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-book-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/assets/profile-10.jpg"></span>
+                            <span><img src="/assets/profile-4.jpg"></span>
+                            <span><img src="/assets/profile-8.jpg"></span>
+                            <p>Curtido por <b>Lorem ipsum</b> e <b>232 outros</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lorem ipsum</b> Lorem ipsum dolor sit
+                                <span class="harsh-tag">#Lorem ipsum</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            Ver todos os 277 comentários
+                        </div>
+                    </div>
+                    <!--=====FEED 3=====-->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/assets/profile-19.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lorem ipsum</h3>
+                                    <small>Salvador, 15min atrás.</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="/assets/feed-3.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-book-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/assets/profile-10.jpg"></span>
+                            <span><img src="/assets/profile-4.jpg"></span>
+                            <span><img src="/assets/profile-8.jpg"></span>
+                            <p>Curtido por <b>Lorem ipsum</b> e <b>232 outros</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lorem ipsum</b> Lorem ipsum dolor sit
+                                <span class="harsh-tag">#Lorem ipsum</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            Ver todos os 277 comentários
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--=========ESPAÇO A DIREITA=======-->
+            <div class="right">
+
+            </div>
+        </div>
+    </main>
+    <!--scripts-->
+    <script src="/index.js"></script>
+</body>
+
+</html>
